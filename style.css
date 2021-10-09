@@ -1,0 +1,37 @@
+
+@media screen and (max-width: 475px) {
+    
+    #divFiltro {
+    position: absolute;
+    visibility: hidden;
+    width: 240px;
+    margin: 0%;
+    top: 0%;
+   font-weight: bold;
+   background-color: white;
+    
+}
+#fecharFiltro {
+    padding: 10px;
+    color: gray;
+    background: white;
+    border: none;
+    font-weight: bold;
+    
+}
+#opções {
+   display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+#ft {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    background: white;
+    margin-top: 10px;
+    font-size: 12pt;
+    width: 100px;
+}
+}
