@@ -1,10 +1,11 @@
 
-@media screen and (max-width: 475px) {
-    
+@media screen and (max-width: 375px) {
+  
     #divFiltro {
     position: absolute;
     visibility: hidden;
     width: 240px;
+    height: 700px;
     margin: 0%;
     top: 0%;
    font-weight: bold;
@@ -34,4 +35,6 @@
     font-size: 12pt;
     width: 100px;
 }
+
+
 }
