@@ -36,5 +36,37 @@
     width: 100px;
 }
 
+#icoNext {
+    position: absolute;
+    border: none;
+    background: white;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-top: 200px;
+    margin-left: 320px;
+}
+#icoNext1 {
+    width: 10px;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+}
+#icoPrev {
+    position: absolute;
+    border: none;
+    background: white;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+#icoPrev1 {
+    width: 10px;
+    margin-left: 20%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 }
