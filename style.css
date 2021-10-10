@@ -72,10 +72,10 @@
     transform: translate(-50%, -50%);
 }
 #textos {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 #tenis1 {
-    width: 375px;
+    width: 380px;
     height: 320px;
     margin-left: 0;
     transform: rotate(-5%, 10%);
@@ -148,5 +148,28 @@
     margin-left: -30px;    
     border: white;
 }
+#itensCarrinho {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    margin-top: 330px;
+    height: 260px;
+    width: 360px;
+    background: white;
+    border-radius: 10px;
+    
+}
+#textoCart {
+   margin-left: -270px;
+   margin-top: 15px;
+}
+#empty {
+    position: absolute;
+    font-weight: bold;
+     color: rgb(141, 138, 138);
+   margin-left: -70px;
+   margin-top: 50px;
+}
 
 }
+
