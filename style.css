@@ -1,6 +1,9 @@
 
 @media screen and (max-width: 375px) {
-  
+  #container1 {
+      margin: 0%;
+      padding: 0%;
+  }
     #divFiltro {
     position: absolute;
     visibility: hidden;
@@ -67,6 +70,77 @@
     margin-left: 20%;
     margin-top: 50%;
     transform: translate(-50%, -50%);
+}
+#textos {
+    margin-left: 20px;
+}
+#tenis1 {
+    width: 375px;
+    height: 320px;
+    margin-left: 0;
+    transform: rotate(-5%, 10%);
+}
+#titulo {
+    margin-top: 30px;
+    font-size: 12pt;
+    font-weight: bold;
+    
+    color: hsl(26, 100%, 55%); 
+}
+#preço{
+    font-size: 18pt;
+    font-weight: bold;
+}
+#Desc {
+    margin-left: 10px;
+    height: 10px;
+    width: 30px;
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+}
+#preço2 {
+    color: rgb(194, 194, 194);
+    font-weight: bold;
+    margin-left: 140px;
+    
+}
+
+#adicionar {
+   text-align: center;
+    margin-top: 20px;
+    background-color: hsl(223, 64%, 98%);
+    height: 50px;
+    border-radius: 10px;
+}
+#mais {
+    margin-left: 250px;
+    margin-top: 16px;
+}
+#menos {
+    margin-left: 0px;
+    margin-top: 16px;
+} 
+#quantidade {
+    position: absolute;
+    margin-left: 120px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+#botAdd {
+   background-color:  hsl(26, 100%, 55%);
+    margin-top: 10px;
+    width: 350px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#carrinho2 {
+   position: absolute;
+    margin-left: -30px;    
+    border: white;
 }
 
 }

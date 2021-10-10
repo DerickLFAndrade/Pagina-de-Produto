@@ -18,52 +18,77 @@
 
 <body>
 
-<button id="icoPrev"><span><img id="icoPrev1" src="icon-previous.svg" alt=""></span></button>
-<button id="icoNext"><span><img id="icoNext1" src="icon-next.svg" alt=""></span></button>
-
-    <div class="container-fluid" id="containerMaster"
-        style="margin:0%; padding: 0%; position: absolute; width: 375px; height: 700px;">
-    </div>
-
-    <nav class="navbar navbar-light bg-lignt" style="width: 375px;">
-
-        <button class="navbar-toggler " id="navBot">
-
-            <span class="navbar-toggler-icon " style="width: 20px; height: 20px; border: none!important;"></span>
-
-        </button>
-        <span
-            style="color:  hsl(220, 13%, 13%); position: absolute; margin-left: 60px; font-size: 22pt; font-weight: none; font-family:'Franklin Gothic Medium', 'Arial Narrow','monospace', Arial, sans-serif; ">sneakers</span>
-
-        <span><img src="icon-cart.svg" alt="" style=" position: absolute; margin-left: 70px; margin-top: -8px;"></span>
-
-        <span><img src="image-avatar.png" alt=""
-                style="position: absolute; width: 22px; margin-left: -60px; margin-top: -8px;"></span>
+<div class="container-fluid" id="container1">
 
 
-    </nav>
-
-
-    <div id="divFiltro">
-        <button id="fecharFiltro">X</button>
-        <div id="opções">
-            <div class="row">
-                <div class="col-2">
-
-                    <input type="button" name="1" id="ft" value="Collection"></input>
-                    <input type="button" name="2" id="ft" value="Men"></input>
-                    <input type="button" name="3" id="ft" value="Women"></input>
-                    <input type="button" name="4" id="ft" value="About"></input>
-                    <input type="button" name="" id="ft" value="Contact"></input>
-                    </col>
+    <button id="icoPrev"><span><img id="icoPrev1" src="icon-previous.svg" alt=""></span></button>
+    <button id="icoNext"><span><img id="icoNext1" src="icon-next.svg" alt=""></span></button>
+    
+        <div class="container-fluid" id="containerMaster"
+            style="margin:0%; padding: 0%; position: absolute; width: 365px; height: 700px;">
+        </div>
+    
+        <nav class="navbar navbar-light bg-lignt" style="width: 375px; margin-left: 10px;">
+    
+            <button class="navbar-toggler " id="navBot" style="border: none">
+    
+                <span class="navbar-toggler-icon " style="width: 25px; height: 25px;"></span>
+    
+            </button>
+            <span
+                style="color:  hsl(220, 13%, 13%); position: absolute; margin-left: 60px; font-size: 22pt; font-weight: none; font-family:'Franklin Gothic Medium', 'Arial Narrow','monospace', Arial, sans-serif; ">sneakers</span>
+    
+            <span><img src="icon-cart.svg" alt="" style=" position: absolute; margin-left: 70px; margin-top: -8px;"></span>
+    
+            <span><img src="image-avatar.png" alt=""
+                    style="position: absolute; width: 22px; margin-left: -60px; margin-top: -8px;"></span>
+    
+    
+        </nav>
+    
+    
+        <div id="divFiltro">
+            <button id="fecharFiltro">X</button>
+            <div id="opções">
+                <div class="row">
+                    <div class="col-2">
+    
+                        <input type="button" name="1" id="ft" value="Collection"></input>
+                        <input type="button" name="2" id="ft" value="Men"></input>
+                        <input type="button" name="3" id="ft" value="Women"></input>
+                        <input type="button" name="4" id="ft" value="About"></input>
+                        <input type="button" name="5" id="ft" value="Contact"></input>
+                        </col>
+                    </div>
                 </div>
             </div>
         </div>
+    <img src="image-product-1.jpg" alt="tenis1"  id="tenis1">
+
+    <div class="container" id="textos">
+        <span>
+            <h1 id="titulo">SNEAKER COMPANY</h1>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p id="p1">These low-profile sneakers are your perfect casuak wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        </span>
+        <span id="preço">$125.00</span>
+            <span id="Desc">50%</span>
+            <span id="preço2"><s>$250.00</s></span>
+        
+
+            <div id="adicionar">
+                <img src="icon-minus.svg" alt="" id="menos"> 
+                <span id="quantidade">0</span>
+                <img src="icon-plus.svg" alt="" id="mais">
+                
+            </div>
+            <button id="botAdd"><span id="carrinho"><img src="icon-cart.svg" alt="" id="carrinho2">Add to cart</span></button>
     </div>
     
+</div>
     
 
-        <img src="image-product-1.jpg" alt="" style="width: 375px; height: 300px; margin-top: 20px;">
+        
         <script src="JavaScript.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
