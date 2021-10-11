@@ -10,13 +10,14 @@ var botMais = document.getElementById('mais')
 var botMenos = document.getElementById('menos')
 var quantidade = document.getElementById('quantidade')
 var quantidadeCar = document.getElementById('quantidadeCar')
+var quantidadeCarNav = document.getElementById('quantidadeCarNav')
 var somaValor 
 botMenos.addEventListener('click', remove)
 botMais.addEventListener('click', add)
 function add() {
    if(quantidade.value >= 0 ){
       
-      quantidadeCar =  quantidade.value++
+      quantidade.value++
       
   }
 }
@@ -29,13 +30,20 @@ function remove() {
 }
 
 carrinhoNav.addEventListener('click', function(){
-    if(itensCarrinho.style.visibility == 'hidden') {
+    if (quantidadeCar.value >=1) {
+        produtoCarrinho.style.visibility = 'visible'
         itensCarrinho.style.visibility = 'visible'
-        
-
-    } else {
+    } else if (quantidadeCar.value <= 0 ){
+        produtoCarrinho.style.visibility = 'hidden'
         itensCarrinho.style.visibility = 'hidden'
     }
+   // if(itensCarrinho.style.visibility == 'hidden') {
+     //   itensCarrinho.style.visibility = 'visible'
+        
+
+    //else {
+  //      itensCarrinho.style.visibility = 'hidden'
+  //  }
    
 })
 
@@ -44,19 +52,17 @@ botAdd.addEventListener('click', function () {
     let preçoCar = document.getElementById('preçoCar')
     let empty = document.getElementById('empty').style.visibility = 'hidden'
     let resultado = document.getElementById('resultado')
-    if (produtoCarrinho.style.visibility == 'hidden'){
-        produtoCarrinho.style.visibility = 'visible'
-        itensCarrinho.style.visibility = 'visible'
+    quantidadeCar.value = quantidade.value
+    quantidadeCarNav.value = quantidade.value
+    
+       
    
-    } else {
-        produtoCarrinho.style.visibility = 'hidden'
-        itensCarrinho.style.visibility = 'hidden'
-    }
+ 
     
     
     
-    somaValor += quantidadeCar * Number(preçoCar.value)
-    console.log(somaValor)
+    //somaValor += quantidadeCar * Number(preçoCar.value)
+    //console.log(somaValor)
   })
 
 
