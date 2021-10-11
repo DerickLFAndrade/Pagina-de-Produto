@@ -10,7 +10,7 @@ var botMais = document.getElementById('mais')
 var botMenos = document.getElementById('menos')
 var quantidade = document.getElementById('quantidade')
 var quantidadeCar = document.getElementById('quantidadeCar')
-var quantidadeCarNav = document.getElementById('quantidadeCarNav')
+var quantidadeCarNav = document.getElementById('qtdCarNavValor')
 var somaValor 
 botMenos.addEventListener('click', remove)
 botMais.addEventListener('click', add)
@@ -68,7 +68,7 @@ botAdd.addEventListener('click', function () {
 
 
 navBot.addEventListener('click', function() {
-    containerMaster.style.opacity = '0.1'
+  
     
     
     divFiltro.style.visibility = 'visible'
