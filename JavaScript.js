@@ -51,7 +51,10 @@ carrinhoNav.addEventListener('click', function(){
 botAdd.addEventListener('click', function () {
     let preçoCar = document.getElementById('preçoCar')
     let empty = document.getElementById('empty').style.visibility = 'hidden'
-    let resultado = document.getElementById('resultado')
+   let resultado = document.getElementById('resultado')
+    let soma = 125 * quantidade.value
+   console.log(typeof preçoCar)
+    resultado.innerHTML = `$${soma.toFixed(2)}`
     quantidadeCar.value = quantidade.value
     quantidadeCarNav.value = quantidade.value
     
