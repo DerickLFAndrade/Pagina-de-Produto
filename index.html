@@ -38,12 +38,26 @@
             <span
                 style="color:  hsl(220, 13%, 13%); position: absolute; margin-left: 60px; font-size: 22pt; font-weight: none; font-family:'Franklin Gothic Medium', 'Arial Narrow','monospace', Arial, sans-serif; ">sneakers</span>
 
-            <span id="carrinhoNav"><img src="icon-cart.svg" alt=""
-                    style=" position: absolute; margin-left: 70px; margin-top: -8px;"></span>
+
+            <input id="quantidadeCarNav" type="number" value="0" disabled></input>
+               
+            <span id="carrinhoNav"><img src="icon-cart.svg" alt="" ></span>
 
             <div id="itensCarrinho">
                 <h2 id="textoCart">Cart</h2>
-
+                <div id="produtoCarrinho">
+                    <span id="prodTextCar"> <img id="tenisCarrinho" src="image-product-1-thumbnail.jpg" alt=""> <span>Autumn Limited Edition..</span>
+                    
+                    <span id="icoRemove"><img src="icon-delete.svg" alt=""></span>
+                        <h3 id="preçoCar">$125.00 x </h3>
+                        <input id="quantidadeCar" type="number" value="0" disabled></input>
+                        <span id="resultado"></span>
+                 
+                   
+                    
+                    <button id="checkout">Checkout</button>
+                </div>
+                
                 <hr>
                 <span id="empty">Your cart is empty.</span>
             </div>
