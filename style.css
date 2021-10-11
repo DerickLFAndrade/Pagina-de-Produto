@@ -1,8 +1,9 @@
 
 @media screen and (max-width: 450px) {
+    
   #container1 {
-      margin: 0%;
-      padding: 0%;
+    position: absolute;
+    height: 1px;
       
   }
     #divFiltro {
@@ -136,7 +137,7 @@
 
 #adicionar {
    text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: hsl(223, 64%, 98%);
     height: 50px;
     border-radius: 10px;
