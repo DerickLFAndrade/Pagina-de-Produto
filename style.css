@@ -124,16 +124,29 @@
     width: 350px;
 }
 #mais {
-    margin-left: 250px;
-    margin-top: 16px;
+    background: none;
+    border: none;
+    margin-left: 200px;
+    
+    width: 50px;
+    height: 50px;
+
 }
 #menos {
+     width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
     margin-left: 0px;
-    margin-top: 16px;
+    
 } 
 #quantidade {
+    
+     background: none;
+    border: none;
+    width: 30px;
     position: absolute;
-    margin-left: 120px;
+    margin-left: 100px;
     font-weight: bold;
     margin-top: 12px;
 }

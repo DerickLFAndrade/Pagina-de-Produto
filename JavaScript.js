@@ -4,7 +4,24 @@ var fecharFiltro = document.getElementById('fecharFiltro')
 var containerMaster = document.getElementById('containerMaster')
 var carrinhoNav = document.getElementById('carrinhoNav')
 var itensCarrinho = document.getElementById('itensCarrinho')
+var botMais = document.getElementById('mais')
+var botMenos = document.getElementById('menos')
+var quantidade = document.getElementById('quantidade')
+botMenos.addEventListener('click', remove)
+botMais.addEventListener('click', add)
+function add() {
+   if(quantidade.value >= 0 ){
+        quantidade.value++
+     
+  }
+}
+function remove() {
+    if (quantidade.value >= 1) {
+        quantidade.value--
 
+    }
+
+}
 carrinhoNav.addEventListener('click', function(){
     if(itensCarrinho.style.visibility == 'hidden') {
         itensCarrinho.style.visibility = 'visible'
