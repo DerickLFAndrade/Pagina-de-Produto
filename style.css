@@ -1,8 +1,9 @@
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   #container1 {
       margin: 0%;
       padding: 0%;
+      
   }
     #divFiltro {
     position: absolute;
@@ -93,7 +94,7 @@
     margin-left: 10px;
 }
 #tenis1 {
-    width: 380px;
+    width: 370px;
     height: 320px;
     margin-left: 0;
     transform: rotate(-5%, 10%);
