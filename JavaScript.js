@@ -12,6 +12,7 @@ var quantidade = document.getElementById('quantidade')
 var quantidadeCar = document.getElementById('quantidadeCar')
 var qtdCarNavValor = document.getElementById('qtdCarNavValor')
 var quantidadeCarNav1 = document.getElementById('quantidadeCarNav')
+var deleteCar = document.getElementById('icoRemove')
 var somaValor
 
 
@@ -40,6 +41,7 @@ carrinhoNav.addEventListener('click', function(){
         produtoCarrinho.style.visibility = 'hidden'
         itensCarrinho.style.visibility = 'hidden'
     }
+    let empty = document.getElementById('empty').style.visibility = 'hidden'
    // if(itensCarrinho.style.visibility == 'hidden') {
      //   itensCarrinho.style.visibility = 'visible'
         
@@ -61,16 +63,18 @@ botAdd.addEventListener('click', function () {
     resultado.innerHTML = `$${soma.toFixed(2)}`
     quantidadeCar.value = quantidade.value
     qtdCarNavValor.value = quantidade.value
-    
-       
-   
- 
-    
-    
-    
-    //somaValor += quantidadeCar * Number(preçoCar.value)
-    //console.log(somaValor)
+
   })
+
+  deleteCar.addEventListener('click', remover)
+  function remover() { 
+    quantidadeCar.value = 0
+    qtdCarNavValor.value = 0
+    quantidadeCarNav1.style.visibility = 'hidden'
+      produtoCarrinho.style.visibility = 'hidden'
+      //itensCarrinho.style.visibility = 'hidden'
+      let empty = document.getElementById('empty').style.visibility = 'visible'
+   }
 
 
 
