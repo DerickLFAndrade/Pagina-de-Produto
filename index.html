@@ -19,82 +19,63 @@
 <body>
 
     <div class="container-fluid" id="container1">
+        <header>
 
+            <button id="icoPrev"><span><img id="icoPrev1" src="icon-previous.svg" alt=""></span></button>
+            <button id="icoNext"><span><img id="icoNext1" src="icon-next.svg" alt=""></span></button>
 
-        <button id="icoPrev"><span><img id="icoPrev1" src="icon-previous.svg" alt=""></span></button>
-        <button id="icoNext"><span><img id="icoNext1" src="icon-next.svg" alt=""></span></button>
+            <div class="container" id="navbarCont">
 
-       
-
-        <nav class="navbar navbar-light bg-lignt" style="width: 375px; margin-left: 10px;">
-
-            <button class="navbar-toggler " id="navBot" style="border: none">
-
-                <span class="navbar-toggler-icon " style="width: 25px; height: 25px;"></span>
-
-            </button>
-            <span
-                style="color:  hsl(220, 13%, 13%); position: absolute; margin-left: 60px; font-size: 22pt; font-weight: none; font-family:'Franklin Gothic Medium', 'Arial Narrow','monospace', Arial, sans-serif; ">sneakers</span>
-
-
-            <span id="quantidadeCarNav"><input id="qtdCarNavValor"  type="number" value="0" disabled></input></span>
-               
-            <span id="carrinhoNav"><img src="icon-cart.svg" alt="" ></span>
-
-            <div id="itensCarrinho">
-                <h2 id="textoCart">Cart</h2>
-                <div id="produtoCarrinho">
-                    <span id="prodTextCar"> <img id="tenisCarrinho" src="image-product-1-thumbnail.jpg" alt=""> <span>Autumn Limited Edition..</span>
-                    
-                    <span id="icoRemove"><img src="icon-delete.svg" alt=""></span>
-                    <br>
-                    <span id="textosCart">
-                        
-                            <span id="preçoCar">$125.00 x</span>
-                            <span><input id="quantidadeCar" type="number" value="000" disabled></input></span>
-                            <span id="resultado" type='number'></span>
+                <nav class="navbar navbar-light bg-lignt" style="width: 355px;">
+                    <button class="navbar-toggler " id="navBot" style="border: none">
+                        <span class="navbar-toggler-icon " style="width: 25px; height: 25px;"></span>
+                    </button>
+                    <span
+                        style="color:  hsl(220, 13%, 13%); position: absolute; margin-left: 60px; font-size: 22pt; font-weight: none; font-family:'Franklin Gothic Medium', 'Arial Narrow','monospace', Arial, sans-serif; ">sneakers</span>
+                    <span id="quantidadeCarNav">
+                        <input id="qtdCarNavValor"  type="number" value="0" disabled></input>
                     </span>
-                      
-                      
-                 
-                   
                 
-                    <button id="checkout">Checkout</button>
-                </div>
+                    <span id="carrinhoNav"><img src="icon-cart.svg" alt="" ></span>
+                    <div id="itensCarrinho">
+                        <h2 id="textoCart">Cart</h2>
+                        <div id="produtoCarrinho">
+                            <span id="prodTextCar"> <img id="tenisCarrinho" src="image-product-1-thumbnail.jpg" alt=""> <span>Autumn Limited Edition..</span>
                 
-                <hr>
-                <span id="empty">Your cart is empty.</span>
-            </div>
-            <span><img src="image-avatar.png" alt=""
-                    style="position: absolute; width: 22px; margin-left: -60px; margin-top: -8px;"></span>
-
-
-        </nav>
-
-
-        <div id="divFiltro">
-            <button id="fecharFiltro">X</button>
-            <div id="opções">
-                <div class="row">
-                    <div class="col-2">
-
-                        <input type="button" name="1" id="ft" value="Collection"></input>
-                        <input type="button" name="2" id="ft" value="Men"></input>
-                        <input type="button" name="3" id="ft" value="Women"></input>
-                        <input type="button" name="4" id="ft" value="About"></input>
-                        <input type="button" name="5" id="ft" value="Contact"></input>
-                        </col>
+                            <span id="icoRemove"><img src="icon-delete.svg" alt=""></span>
+                            <br>
+                            <span id="textosCart">
+                
+                                    <span id="preçoCar">$125.00 x</span>
+                                    <span><input id="quantidadeCar" type="number" value="000" disabled></input></span>
+                                    <span id="resultado" type='number'></span>
+                            </span>
+                
+                
+                
+                
+                
+                            <button id="checkout">Checkout</button>
+                        </div>
+                
+                        <hr>
+                        <span id="empty">Your cart is empty.</span>
                     </div>
-                </div>
+                    <span><img src="image-avatar.png" alt=""
+                            style="position: absolute; width: 22px; margin-left: -60px; margin-top: -8px;"></span>
+                </nav>
             </div>
-        </div>
+        </header>
+
+
+        
         <img src="image-product-1.jpg" alt="tenis1" id="tenis1">
 
         <div class="container" id="textos">
             <span>
                 <h1 id="titulo">SNEAKER COMPANY</h1>
-                <h2>Fall Limited Edition Sneakers</h2>
-                <p id="p1">These low-profile sneakers are your perfect casuak wear companion. Featuring a durable rubber
+                <h3>Fall Limited Edition Sneakers</h3>
+                <p id="p1">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber
                     outer sole, they'll withstand everything the weather can offer.</p>
             </span>
 
@@ -114,6 +95,23 @@
             </div>
             <button id="botAdd"><span id="carrinho"><img src="icon-cart.svg" alt="" id="carrinho2">Add to
                     cart</span></button>
+        </div>
+
+        <div id="divFiltro">
+            <button id="fecharFiltro">X</button>
+            <div id="opções">
+                <div class="row">
+                    <div class="col-2">
+        
+                        <input type="button" name="1" id="ft" value="Collection"></input>
+                        <input type="button" name="2" id="ft" value="Men"></input>
+                        <input type="button" name="3" id="ft" value="Women"></input>
+                        <input type="button" name="4" id="ft" value="About"></input>
+                        <input type="button" name="5" id="ft" value="Contact"></input>
+                        </col>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
