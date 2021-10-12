@@ -68,12 +68,15 @@ botAdd.addEventListener('click', function () {
 
   deleteCar.addEventListener('click', remover)
   function remover() { 
+      let confirma = confirm('Do you want to remove items from cart?')
+      if (confirma == true) {
     quantidadeCar.value = 0
     qtdCarNavValor.value = 0
     quantidadeCarNav1.style.visibility = 'hidden'
       produtoCarrinho.style.visibility = 'hidden'
       //itensCarrinho.style.visibility = 'hidden'
       let empty = document.getElementById('empty').style.visibility = 'visible'
+      }
    }
 
 
