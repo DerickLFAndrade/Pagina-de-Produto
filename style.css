@@ -8,6 +8,7 @@
     height: 1px;
       
   }
+ 
     #divFiltro {
     position: absolute;
     visibility: hidden;
@@ -298,6 +299,11 @@ position: absolute;
     height: 1px;
       
   }
+  #navbar {
+      width: 395px;
+    margin-left: -80px;
+  }
+
     #divFiltro {
     position: absolute;
     visibility: hidden;
@@ -333,6 +339,7 @@ position: absolute;
     width: 100px;
 }
 #quantidadeCarNav {
+    visibility: hidden;
      position: absolute;
      background: none;
     border: none;
@@ -341,8 +348,8 @@ position: absolute;
     text-indent:5px;
     background: hsl(26, 100%, 55%); ;
     border-radius: 50px;
-    margin-top: -18px;
-    margin-left: 290px;
+    margin-top: -16px;
+    margin-left: 270px;
     color: white;
 }
 #qtdCarNavValor {
@@ -356,7 +363,7 @@ position: absolute;
     font-weight: bold;
 }
 #carrinhoNav {
-     margin-left: 160px; margin-top: -8px;
+     margin-left: 140px;
 }
 
 #icoNext {
@@ -493,6 +500,7 @@ position: absolute;
     margin-top: 315px;
     height: 240px;
     width: 360px;
+    margin-left: 18px;
     background: white;
     border-radius: 10px;
     
