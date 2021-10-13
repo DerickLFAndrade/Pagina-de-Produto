@@ -35,21 +35,27 @@ function remove() {
 }
 
 carrinhoNav.addEventListener('click', function(){
+
+    if (itensCarrinho.style.visibility == 'hidden') {
+        produtoCarrinho.style.visibility = 'visible'
+        itensCarrinho.style.visibility = 'visible'
+    } else {
+        produtoCarrinho.style.visibility = 'hidden'
+        itensCarrinho.style.visibility = 'hidden'
+        let empty = document.getElementById('empty').style.visibility = 'hidden'
+    }
+
+
     if (quantidadeCar.value >=1) {
         produtoCarrinho.style.visibility = 'visible'
         itensCarrinho.style.visibility = 'visible'
-    } else if (quantidadeCar.value <= 0 ){
+    }else {
         produtoCarrinho.style.visibility = 'hidden'
-        itensCarrinho.style.visibility = 'hidden'
-    }
-    let empty = document.getElementById('empty').style.visibility = 'hidden'
-   // if(itensCarrinho.style.visibility == 'hidden') {
-     //   itensCarrinho.style.visibility = 'visible'
-        
+    itensCarrinho.style.visibility = 'hidden'
+   }
+  
 
-    //else {
-  //      itensCarrinho.style.visibility = 'hidden'
-  //  }
+    
    
 })
 
