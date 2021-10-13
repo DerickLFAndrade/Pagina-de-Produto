@@ -236,15 +236,15 @@
     
 }
 #carrinho2 {
-  
+  position: absolute;
     margin-left: -30px;    
     border: white;
 }
 /* CARRINHO */
 #itensCarrinho {
     visibility: hidden;
-    
-   
+    z-index: 2000;
+   position: absolute;
     text-align: center;
     margin-top: 40px;
     margin-left: -210px;
@@ -256,7 +256,7 @@
 }
 #tenisCarrinho {
     width: 50px;
-    margin-top: 30px;
+    margin-top: -10px;
     margin-left: -40px;
 }
 #produtoCarrinho {
@@ -264,7 +264,7 @@
 
     width: 310px;
     margin-left: px;
-    margin-top: -20px;
+    margin-top: -40px;
     height: 170px;
     
     
@@ -278,19 +278,13 @@
    font-size: 15pt; 
   
 }
-#linha {
-    height: 1px;
-    width: 270px;
-    margin-left: 25px;
-    background: gray;
-}
 
 /* CONTEÚDO DENTRO DO CARRINHO */
 #textosCart {
     display: flex;
     color: black;
   margin-left: 100px;
-   margin-top: -20px;
+   margin-top: -10px;
    font-size: 12pt;
    
 }
@@ -311,14 +305,14 @@
 #icoRemove {
     position: absolute;
     margin-left: 20px;
-    margin-top: 58px;
+    margin-top: 8px;
     cursor: pointer;
    
 }
 #checkout {
    
       background-color:  hsl(26, 100%, 55%);
-    margin-top: 30px;
+    margin-top: 10px;
     width: 290px;
     margin-left: 12px;
     height: 50px;
