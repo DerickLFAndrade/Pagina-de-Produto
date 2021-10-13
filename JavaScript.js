@@ -16,6 +16,7 @@ var deleteCar = document.getElementById('icoRemove')
 var somaValor
 
 
+
 botMenos.addEventListener('click', remove)
 botMais.addEventListener('click', add)
 function add() {
@@ -56,14 +57,18 @@ carrinhoNav.addEventListener('click', function(){
 botAdd.addEventListener('click', function () {
     let preçoCar = document.getElementById('preçoCar')
     let empty = document.getElementById('empty').style.visibility = 'hidden'
-    quantidadeCarNav1.style.visibility = 'visible'
+   
    let resultado = document.getElementById('resultado')
     let soma = 125 * quantidade.value
-   console.log(typeof preçoCar)
+   
     resultado.innerHTML = `$${soma.toFixed(2)}`
     quantidadeCar.value = quantidade.value
     qtdCarNavValor.value = quantidade.value
-
+    if (qtdCarNavValor.value > 0) {
+        quantidadeCarNav1.style.visibility = 'visible'
+    } else {
+        quantidadeCarNav1.style.visibility = 'hidden'
+    }
   })
 
   deleteCar.addEventListener('click', remover)
