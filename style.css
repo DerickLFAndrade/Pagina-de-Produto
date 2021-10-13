@@ -387,6 +387,10 @@
 }
 /* CONTEÚDO DENTRO DO CARRINHO */
 /* CARRINHO */
+
+.tumbs {
+    display: none;
+}
 }
 
 @media screen and (min-width: 576px) {
@@ -517,7 +521,7 @@
     
 }
 #textos {
-    margin-left: 50px;
+    margin-left: -90px;
     margin-top: 50px; 
 }
 #tenis1 {
@@ -528,6 +532,26 @@
   border-radius: 10px;
     
 }
+.container-img {
+    
+    display: block;
+    
+    
+} 
+.tumbs {
+    width: 500px;
+    margin-left: 98px;
+    margin-top: 10px;
+}
+.itemI {
+    
+    border-radius: 20px;
+    width: 75px;
+    height: 75px;
+    margin:5px
+}
+
+
 #titulo {
     margin-top: 30px;
     font-size: 11pt;
