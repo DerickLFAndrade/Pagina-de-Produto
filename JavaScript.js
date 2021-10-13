@@ -104,4 +104,4 @@ function iniciaModal (modalID) {
     const modal = document.getElementById(modalID)
     modal.classList.add('mostrar')
   }
-  navBot.addEventListener('click', iniciaModal(''))
+navBot.addEventListener('click', iniciaModal('divFiltroMod'))
