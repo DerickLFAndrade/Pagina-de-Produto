@@ -100,8 +100,13 @@ botAdd.addEventListener('click', function () {
 
  
 
-function iniciaModal (modalID) {
-    const modal = document.getElementById(modalID)
-    modal.classList.add('mostrar')
-  }
-navBot.addEventListener('click', iniciaModal('divFiltroMod'))
+//function iniciaModal (modalID) {
+  //  const modal = document.getElementById(modalID)
+ //   modal.classList.add('mostrar')
+ // }
+ navBot.addEventListener('click', function(){
+     divFiltro.classList.add('mostrar')
+     fecharFiltro.addEventListener('click', function(){
+         divFiltro.classList.remove('mostrar')
+     })
+ }) 

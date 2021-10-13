@@ -95,31 +95,34 @@
 }
 
 
-#icoNext {
-position: absolute;
+.icoNext {
+  position: absolute;
     border: none;
     background: white;
     border-radius: 50px;
     width: 40px;
     height: 40px;
-    
+    margin-top: 110px;
+    margin-left: 295px;
 }
-#icoNext1 {
+.icoNext1 {
     width: 10px;
     margin-left: 50%;
     margin-top: 50%;
     transform: translate(-50%, -50%);
 }
-#icoPrev {
+.icoPrev {
     position: absolute;
     border: none;
     background: white;
     border-radius: 50px;
     width: 40px;
     height: 40px;
+    margin-top: 110px;
+    margin-left: 20px;
     
 }
-#icoPrev1 {
+.icoPrev1 {
     width: 10px;
     margin-left: 20%;
     margin-top: 50%;
@@ -233,7 +236,7 @@ position: absolute;
 }
 /* CARRINHO */
 #itensCarrinho {
-    visibility: visible;
+    visibility: hidden;
     
    
     text-align: center;
@@ -336,7 +339,7 @@ position: absolute;
      color: rgb(141, 138, 138);
    
 }
-@keyframes modal {
+@keyframes iniAni {
     from {
         opacity: 0;
         transform: translate3d(0, -100px, 0);
@@ -347,6 +350,7 @@ position: absolute;
     }
 }
 
+
 .modalCont {
     
     width: 100vw;
@@ -356,13 +360,15 @@ position: absolute;
     left: 0;
     z-index: 2000;
     background: rgba(0, 0, 0, 0.5);
-    display: none;
+   display: none;
 }
 .modalCont.mostrar {
     display: flex;
 }
+
 .mostrar {
-    animation: modal .9s;
+    animation: iniAni .5s;
+    
 }
 #opçõesMod {
     display: flex;
@@ -732,6 +738,9 @@ position: absolute;
 }
 /* CONTEÚDO DENTRO DO CARRINHO */
 /* CARRINHO */
+.modalCont {
+    visibility: hidden;
+}
 }
 
 
