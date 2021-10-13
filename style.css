@@ -390,6 +390,9 @@
 }
 
 @media screen and (min-width: 576px) {
+    .nexPrev {
+        visibility: hidden;
+    }
     
   #container1 {
    
