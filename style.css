@@ -9,18 +9,24 @@
       
   }
   header {
-      width: 355px;
-     
-  }
+      width: 265px;
+   }
   #itensNav {
-      display: flex;
+      display: flex; 
+    }
+ 
+  #carrinhoNav {
+      visibility: visible;
+    
   }
+    
   #avatar {
+      visibility: visible;
       width: 30px;
-  }
+    }
   #titulo1 {
       position: absolute;
-  }
+    }
  
     #divFiltro {
     position: absolute;
@@ -32,7 +38,6 @@
    font-weight: bold;
    background-color: white;
    
-    
 }
 #fecharFiltro {
     padding: 10px;
@@ -41,14 +46,12 @@
     border: none;
     font-weight: bold;
     
-    
 }
 #opções {
-   display: block;
+   display: grid;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
     margin-left: 5px;
     margin-top: 20px;
-    
 }
 #ft {
     font-weight: bold;
@@ -58,27 +61,38 @@
     margin-top: 10px;
     font-size: 12pt;
     width: 100px;
-    
 }
+ .item {
+    margin: 10px;
+}
+
+
+ #itensNav {
+      display: flex; 
+  }
+  #avatar {
+      visibility: visible;
+      width: 30px;
+  }
+  #carrinhoNav {
+      visibility: visible;
+  }
 #quantidadeCarNav {
-    position: absolute;
-    
-     background: none;
+   visibility: hidden;
+ background: none;
     border: none;
     width: 22px;
     height: 15px;
     text-indent:5px;
     background: hsl(26, 100%, 55%); ;
     border-radius: 50px;
-   margin-left:150px;
-   margin-top: -20px;
+    margin-left: -40px;
+  
     color: white;
     
     
 }
-#carrinhoNav {
-    margin-left: 120px;
-}
+
 
 #qtdCarNavValor {
   position: absolute;
@@ -88,21 +102,18 @@
     width: 35px;
     font-size: 9pt;
     font-weight: bold;
-    margin-top: -3px;   
+    margin-top: -3px; 
+      
 }
 
 
-
-
 #icoNext {
-    position: absolute;
+position: absolute;
     border: none;
     background: white;
     border-radius: 50px;
     width: 40px;
     height: 40px;
-    margin-top: 200px;
-    margin-left: 300px;
     
 }
 #icoNext1 {
@@ -110,7 +121,6 @@
     margin-left: 50%;
     margin-top: 50%;
     transform: translate(-50%, -50%);
-    
 }
 #icoPrev {
     position: absolute;
@@ -119,8 +129,6 @@
     border-radius: 50px;
     width: 40px;
     height: 40px;
-    margin-top: 200px;
-    margin-left: 10px;
     
 }
 #icoPrev1 {
@@ -128,19 +136,16 @@
     margin-left: 20%;
     margin-top: 50%;
     transform: translate(-50%, -50%);
-    
 }
 #textos {
     width: 345px;
     margin-left: 0px;
-    
 }
 #tenis1 {
     width: 335px;
-    height: 320px;
+    height: 260px;
    margin-left: 0px;
     transform: rotate(-5%, 10%);
-    
 }
 #titulo {
     margin-top: 30px;
@@ -148,23 +153,19 @@
     font-weight: bold;
     
     color: hsl(26, 100%, 55%); 
-    
 }
 #p1 {
     width: 305px;
     font-size: 10pt;
     font-weight: bold;
     color: rgb(172, 169, 169);
-    
 }
 #preçosT {
     width: 305px;
-    
 }
 #preço{
     font-size: 18pt;
     font-weight: bold;
-    
 }
 #Desc {
     margin-left: 10px;
@@ -173,13 +174,11 @@
     background-color: hsl(25, 100%, 94%);
     color: hsl(26, 100%, 55%);
     font-weight: bold;
-    
 }
 #preço2 {
     color: rgb(194, 194, 194);
     font-weight: bold;
     margin-left: 90px;
-    
     
 }
 
@@ -190,7 +189,6 @@
     height: 50px;
     border-radius: 10px;
     width: 320px;
-    
 }
 #mais {
     background: none;
@@ -199,7 +197,6 @@
     
     width: 50px;
     height: 50px;
-    
 
 }
 #menos {
@@ -208,7 +205,6 @@
     background: none;
     border: none;
     margin-left: 0px;
-    
     
 } 
 #quantidade {
@@ -220,7 +216,6 @@
     margin-left: 80px;
     font-weight: bold;
     margin-top: 12px;
-    
 }
 #botAdd {
    background-color:  hsl(26, 100%, 55%);
@@ -237,81 +232,102 @@
    position: absolute;
     margin-left: -30px;    
     border: white;
-    
 }
 /* CARRINHO */
 #itensCarrinho {
-    visibility: hidden;
+    visibility: visible;
     
+    position: absolute;
     text-align: center;
-
-    height: 240px;
-    width: 330px;
-    background: white;
+    margin-top: 20px;
+    margin-left: -210px;
+    height: 220px;
+    width: 320px;
+   background-color: hsl(223, 64%, 98%);
     border-radius: 10px;
-    margin-left: -240px;
-    
+    box-shadow: 0px 5px 5px 5px gray;
 }
 #tenisCarrinho {
     width: 50px;
-    margin-left: -30px;
-    
+    margin-top: 30px;
+    margin-left: -40px;
 }
 #produtoCarrinho {
    visibility: hidden;
-position: absolute;
-    width: 330px;
-    margin-left: 0px;
-    margin-top: 20px;
+
+    width: 310px;
+    margin-left: px;
+    margin-top: -20px;
     height: 170px;
     
-   
     
 }
-/* CONTEÚDO DENTRO DO CARRINHO */
 #textoCart {
-   margin-left: -250px;
-   margin-top: 25px;
-   font-size: 15pt;
+
+    color: black;
+   margin-left: -240px;
+   margin-top: 10px;
+   padding: 10px;
+   font-size: 15pt; 
+  
+}
+#linha {
+    height: 1px;
+    width: 270px;
+    margin-left: 25px;
+    background: gray;
+}
+
+/* CONTEÚDO DENTRO DO CARRINHO */
+#textosCart {
+    display: flex;
+    color: black;
+  margin-left: 100px;
+   margin-top: -20px;
+   font-size: 12pt;
+   
 }
 #prodTextCar, #preçoCar {
-    margin-top: -10px;
+    
+   
     font-size: 12pt;
-    color: rgb(194, 194, 194);
+    color: rgb(110, 110, 110);
     
 }
 
 #resultado {
     color: black;
-    margin-left: 25px;
+    margin-left: -15px;
     font-weight: bold;
+    
 }
 #icoRemove {
     position: absolute;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-top: 58px;
     cursor: pointer;
+   
 }
 #checkout {
    
       background-color:  hsl(26, 100%, 55%);
-    margin-top: 20px;
+    margin-top: 30px;
     width: 290px;
-    margin-left: 10px;
+    margin-left: 12px;
     height: 50px;
     color: white;
     border: none;
     border-radius: 10px;
     font-weight: bold;
+    
 }
 #quantidadeCar {
-  position: absolute;
+    
      background: none;
     border: none;
-    width: 20px;
-     font-size: 12pt;
-    color: rgb(194, 194, 194);
-    font-weight: bold;
+    width: 30px;
+    font-size: 12pt;
+    color: rgb(110, 110, 110);
     margin-top: -1px;
     margin-left: 5px;
 }
@@ -320,8 +336,8 @@ position: absolute;
     position: absolute;
     font-weight: bold;
      color: rgb(141, 138, 138);
-   margin-left: -70px;
-   margin-top: 50px;
+   margin-left: -90px;
+   margin-top: -90px;
 }
 /* CONTEÚDO DENTRO DO CARRINHO */
 /* CARRINHO */
