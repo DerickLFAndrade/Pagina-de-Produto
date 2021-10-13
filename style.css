@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 575px) {
     
   #container1 {
    
@@ -30,28 +30,16 @@
  
     #divFiltro {
     position: absolute;
-    visibility: hidden;
-    width: 240px;
-    height: 800px;
-    margin: 0%;
-    top: 0%;
-   font-weight: bold;
-   background-color: white;
-   
+  visibility: hidden;
 }
 #fecharFiltro {
-    padding: 10px;
-    color: gray;
-    background: white;
-    border: none;
-    font-weight: bold;
+  position: absolute;
+  visibility: hidden;
     
 }
 #opções {
-   display: grid;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
-    margin-left: 5px;
-    margin-top: 20px;
+  position: absolute;
+  visibility: hidden;
 }
 #ft {
     font-weight: bold;
@@ -147,6 +135,16 @@ position: absolute;
    margin-left: 0px;
     transform: rotate(-5%, 10%);
 }
+#navbarCont {
+    
+  margin-top: -20px;
+}
+#navBot {
+    margin-top: 30px;
+}
+#titulo1 {
+    margin-top: 30px;
+}
 #titulo {
     margin-top: 30px;
     font-size: 12pt;
@@ -193,7 +191,7 @@ position: absolute;
 #mais {
     background: none;
     border: none;
-    margin-left: 200px;
+    margin-left: 70px;
     
     width: 50px;
     height: 50px;
@@ -212,8 +210,8 @@ position: absolute;
      background: none;
     border: none;
     width: 30px;
-    position: absolute;
-    margin-left: 80px;
+   
+    margin-left: 70px;
     font-weight: bold;
     margin-top: 12px;
 }
@@ -229,7 +227,7 @@ position: absolute;
     
 }
 #carrinho2 {
-   position: absolute;
+  
     margin-left: -30px;    
     border: white;
 }
@@ -237,9 +235,9 @@ position: absolute;
 #itensCarrinho {
     visibility: visible;
     
-    position: absolute;
+   
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: -210px;
     height: 220px;
     width: 320px;
@@ -333,17 +331,59 @@ position: absolute;
 }
 #empty {
    
-    position: absolute;
+   
     font-weight: bold;
      color: rgb(141, 138, 138);
-   margin-left: -90px;
-   margin-top: -90px;
+   
+}
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modalCont {
+    
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.modalCont.mostrar {
+    display: flex;
+}
+.mostrar {
+    animation: modal .9s;
+}
+#opçõesMod {
+    display: flex;
+    flex-direction: column;
+
+    
+    background: white;
+    width: 70vw;
+    height: 100vh;
+}
+#fecharFiltromod {
+    width: 50px;
+    margin-left: -10px;
+    border: none;
+    background: none;
 }
 /* CONTEÚDO DENTRO DO CARRINHO */
 /* CARRINHO */
 }
 
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 576px) {
     
   #container1 {
    

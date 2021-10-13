@@ -1,6 +1,6 @@
 var navBot = document.getElementById('navBot')
-var divFiltro = document.getElementById('divFiltro')
-var fecharFiltro = document.getElementById('fecharFiltro')
+var divFiltro = document.getElementById('divFiltroMod')
+var fecharFiltro = document.getElementById('fecharFiltromod')
 var containerMaster = document.getElementById('containerMaster')
 var carrinhoNav = document.getElementById('carrinhoNav')
 var botAdd = document.getElementById('botAdd')
@@ -98,12 +98,10 @@ botAdd.addEventListener('click', function () {
 
 
 
-navBot.addEventListener('click', function() {
-  
-    
-    
-    divFiltro.style.visibility = 'visible'
-    fecharFiltro.addEventListener('click', function() {
-        divFiltro.style.visibility = 'hidden'
-    })
-})
+ 
+
+function iniciaModal (modalID) {
+    const modal = document.getElementById(modalID)
+    modal.classList.add('mostrar')
+  }
+  navBot.addEventListener('click', iniciaModal(''))
