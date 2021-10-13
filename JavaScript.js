@@ -16,7 +16,11 @@ var deleteCar = document.getElementById('icoRemove')
 var somaValor
 
 
-
+document.getElementById('containerTextos').addEventListener('click', function () {
+    produtoCarrinho.style.visibility = 'hidden'
+    itensCarrinho.style.visibility = 'hidden'
+    let empty = document.getElementById('empty').style.visibility = 'hidden'
+  })
 botMenos.addEventListener('click', remove)
 botMais.addEventListener('click', add)
 function add() {
@@ -35,24 +39,24 @@ function remove() {
 }
 
 carrinhoNav.addEventListener('click', function(){
-
-    if (itensCarrinho.style.visibility == 'hidden') {
+ if (quantidadeCar.value > 0) {
         produtoCarrinho.style.visibility = 'visible'
         itensCarrinho.style.visibility = 'visible'
-    } else {
-        produtoCarrinho.style.visibility = 'hidden'
+ } else if (itensCarrinho.style.visibility == 'hidden') {
+     //  produtoCarrinho.style.visibility = 'visible'
+     itensCarrinho.style.visibility = 'visible'
+     let empty = document.getElementById('empty').style.visibility = 'visible'
+ }else if (quantidade.value <=0) {
+      produtoCarrinho.style.visibility = 'hidden'
         itensCarrinho.style.visibility = 'hidden'
-        let empty = document.getElementById('empty').style.visibility = 'hidden'
+     let empty = document.getElementById('empty').style.visibility = 'hidden'
+    }  else {
+     produtoCarrinho.style.visibility = 'hidden'
+     itensCarrinho.style.visibility = 'hidden'
+     let empty = document.getElementById('empty').style.visibility = 'hidden'
     }
 
-
-    if (quantidadeCar.value >=1) {
-        produtoCarrinho.style.visibility = 'visible'
-        itensCarrinho.style.visibility = 'visible'
-    }else {
-        produtoCarrinho.style.visibility = 'hidden'
-    itensCarrinho.style.visibility = 'hidden'
-   }
+ 
   
 
     
@@ -61,6 +65,8 @@ carrinhoNav.addEventListener('click', function(){
 
 
 botAdd.addEventListener('click', function () {
+    produtoCarrinho.style.visibility = 'hidden'
+    itensCarrinho.style.visibility = 'hidden'
     let preçoCar = document.getElementById('preçoCar')
     let empty = document.getElementById('empty').style.visibility = 'hidden'
    
