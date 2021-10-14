@@ -14,21 +14,17 @@ var qtdCarNavValor = document.getElementById('qtdCarNavValor')
 var quantidadeCarNav1 = document.getElementById('quantidadeCarNav')
 var deleteCar = document.getElementById('icoRemove')
 var somaValor
+var empty = document.getElementById('empty')
 
 
-document.getElementById('containerTextos').addEventListener('click', function () {
-    produtoCarrinho.style.visibility = 'hidden'
-    itensCarrinho.style.visibility = 'hidden'
-    let empty = document.getElementById('empty').style.visibility = 'hidden'
-  })
 botMenos.addEventListener('click', remove)
 botMais.addEventListener('click', add)
 function add() {
-   if(quantidade.value >= 0 ){
-      
-      quantidade.value++
-      
-  }
+    if (quantidade.value >= 0) {
+
+        quantidade.value++
+
+    }
 }
 function remove() {
     if (quantidade.value >= 1) {
@@ -38,29 +34,43 @@ function remove() {
 
 }
 
-carrinhoNav.addEventListener('click', function(){
- if (quantidadeCar.value > 0) {
-        produtoCarrinho.style.visibility = 'visible'
+quantidadeCar.value = 0
+carrinhoNav.addEventListener('click', function () {
+
+    console.log(quantidadeCar.value)
+
+    if (quantidadeCar.value == 0) {
+        console.log(quantidadeCar.value)
+        console.log('0')
+        empty.style.visibility = 'visible'
         itensCarrinho.style.visibility = 'visible'
- } else if (itensCarrinho.style.visibility == 'hidden') {
-     //  produtoCarrinho.style.visibility = 'visible'
-     itensCarrinho.style.visibility = 'visible'
-     let empty = document.getElementById('empty').style.visibility = 'visible'
- }else if (quantidade.value <=0) {
-      produtoCarrinho.style.visibility = 'hidden'
+        quantidadeCar.value = -1
+    } else if (quantidadeCar.value == -1) {
+        console.log(quantidadeCar.value)
+        console.log('1')
+        produtoCarrinho.style.visibility = 'hidden'
         itensCarrinho.style.visibility = 'hidden'
-     let empty = document.getElementById('empty').style.visibility = 'hidden'
-    }  else {
-     produtoCarrinho.style.visibility = 'hidden'
-     itensCarrinho.style.visibility = 'hidden'
-     let empty = document.getElementById('empty').style.visibility = 'hidden'
+        empty.style.visibility = 'hidden'
+        quantidadeCar.value = 0
     }
 
- 
-  
+    if (quantidadeCar.value > 0 && produtoCarrinho.style.visibility == 'hidden') {
+        console.log(quantidadeCar.value)
+        console.log('0')
+        produtoCarrinho.style.visibility = 'visible'
+        itensCarrinho.style.visibility = 'visible'
+        empty.style.visibility == 'hidden'
+    } else if (quantidadeCar.value > 0 && produtoCarrinho.style.visibility == 'visible') {
+        console.log(quantidadeCar.value)
+        console.log('1')
+        produtoCarrinho.style.visibility = 'hidden'
+        itensCarrinho.style.visibility = 'hidden'
+        empty.style.visibility == 'hidden'
 
-    
-   
+    }
+
+
+    // 
 })
 
 
@@ -68,11 +78,11 @@ botAdd.addEventListener('click', function () {
     produtoCarrinho.style.visibility = 'hidden'
     itensCarrinho.style.visibility = 'hidden'
     let preçoCar = document.getElementById('preçoCar')
-    let empty = document.getElementById('empty').style.visibility = 'hidden'
-   
-   let resultado = document.getElementById('resultado')
+    empty.style.visibility = 'hidden'
+
+    let resultado = document.getElementById('resultado')
     let soma = 125 * quantidade.value
-   
+
     resultado.innerHTML = `$${soma.toFixed(2)}`
     quantidadeCar.value = quantidade.value
     qtdCarNavValor.value = quantidade.value
@@ -81,32 +91,32 @@ botAdd.addEventListener('click', function () {
     } else {
         quantidadeCarNav1.style.visibility = 'hidden'
     }
-  })
+})
 
-  deleteCar.addEventListener('click', remover)
-  function remover() { 
-      let confirma = confirm('Do you want to remove items from cart?')
-      if (confirma == true) {
-    quantidadeCar.value = 0
-    qtdCarNavValor.value = 0
-    quantidadeCarNav1.style.visibility = 'hidden'
-      produtoCarrinho.style.visibility = 'hidden'
-      //itensCarrinho.style.visibility = 'hidden'
-      let empty = document.getElementById('empty').style.visibility = 'visible'
-      }
-   }
+deleteCar.addEventListener('click', remover)
+function remover() {
+    let confirma = confirm('Do you want to remove items from cart?')
+    if (confirma == true) {
+        quantidadeCar.value = 0
+        qtdCarNavValor.value = 0
+        quantidadeCarNav1.style.visibility = 'hidden'
+        produtoCarrinho.style.visibility = 'hidden'
+        empty.style.visibility = 'visible'
+        quantidadeCar.value = -1
+    }
+}
 
 
 
- 
+
 
 //function iniciaModal (modalID) {
-  //  const modal = document.getElementById(modalID)
- //   modal.classList.add('mostrar')
- // }
- navBot.addEventListener('click', function(){
-     divFiltro.classList.add('mostrar')
-     fecharFiltro.addEventListener('click', function(){
-         divFiltro.classList.remove('mostrar')
-     })
- }) 
+//  const modal = document.getElementById(modalID)
+//   modal.classList.add('mostrar')
+// }
+navBot.addEventListener('click', function () {
+    divFiltro.classList.add('mostrar')
+    fecharFiltro.addEventListener('click', function () {
+        divFiltro.classList.remove('mostrar')
+    })
+})

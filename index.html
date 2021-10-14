@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    
 
     <div class="container-fluid" id="container1">
 
@@ -27,36 +28,34 @@
             <div class="container" id="navbarCont">
 
                 <nav class="navbar navbar-light bg-lignt" id="navbar">
-                    <button class="navbar-toggler " id="navBot" style="border: none">
-                        <span class="navbar-toggler-icon " style="width: 25px; height: 25px;"></span>
-                    </button>
-
-                    <span id="titulo1"
-                        style="color:  hsl(220, 13%, 13%); margin-left: 60px; font-size: 22pt; font-weight: none; font-family:'Franklin Gothic Medium', 'Arial Narrow','monospace', Arial, sans-serif; ">sneakers</span>
-                    <div id="divFiltro">
-                        <button id="fecharFiltro">X</button>
-                        <div id="opções">
 
 
-                            <input type="button" name="1" id="ft" value="Collection"></input>
-                            <input type="button" name="2" id="ft" value="Men"></input>
-                            <input type="button" name="3" id="ft" value="Women"></input>
-                            <input type="button" name="4" id="ft" value="About"></input>
-                            <input type="button" name="5" id="ft" value="Contact"></input>
-
-
+                    <span class="conth">
+                        <button class="navbar-toggler " id="navBot" style="border: none">
+                            <span class="navbar-toggler-icon " style="width: 25px; height: 25px;"></span>
+                        </button>
+                        <div class="navText" id="navText">
+                            <span id="titulo1"
+                                style="color:  hsl(220, 13%, 13%); margin-left: 60px; font-size: 22pt; font-weight: none; font-family:'Franklin Gothic Medium', 'Arial Narrow','monospace', Arial, sans-serif; ">sneakers</span>
+                        </span>
+                        <div id="divFiltro">
+                            <button id="fecharFiltro">X</button>
+                            <div id="opções">
+                                <input class="navInps" type="button" name="1" id="ft" value="Collection"></input>
+                                <input class="navInps" type="button" name="2" id="ft" value="Men"></input>
+                                <input class="navInps" type="button" name="3" id="ft" value="Women"></input>
+                                <input class="navInps" type="button" name="4" id="ft" value="About"></input>
+                                <input class="navInps" type="button" name="5" id="ft" value="Contact"></input>
+                            </div>
                         </div>
+                        <span id="quantidadeCarNav" class="item1">
+                            <input id="qtdCarNavValor" type="number" value = "0" disabled></input>
+                            <div id="itensNav">
+                        </span>
+                        <span id="carrinhoNav" class="item"><img src="icon-cart.svg" alt=""></span>
+                        <span><img id="avatar" src="image-avatar.png" alt="" class="item"></span>
+                                    </div>
                     </div>
-
-                    <span id="quantidadeCarNav" class="item1">
-                        <input id="qtdCarNavValor" type="number" value="0" disabled></input>
-                        <div id="itensNav">
-
-                    </span>
-                    <span id="carrinhoNav" class="item"><img src="icon-cart.svg" alt=""></span>
-                    <span><img id="avatar" src="image-avatar.png" alt="" class="item"></span>
-            </div>
-
 
 
 
@@ -65,7 +64,7 @@
 
                 <h2 id="textoCart">Cart</h2>
                 <div id="linha"></div>
-                <br> <br>
+                <br> <br> <br>
                 <span id="empty">Your cart is empty.</span>
                
                 <div id="produtoCarrinho">
@@ -97,7 +96,7 @@
     </div>
 
     </header>
-    <hr>
+   
 
     <span class='nexPrev' >
         <button class="icoPrev"><img class="icoPrev1" src="icon-previous.svg" alt=""></button>
