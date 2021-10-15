@@ -154,7 +154,11 @@ navBot.addEventListener('click', function () {
     })
 })
 
-
+document.getElementById('container1').addEventListener('click', function() {
+    itensCarrinho.style.visibility = 'hidden'
+    produtoCarrinho.style.visibility = 'hidden'
+    empty.style.visibility = 'hidden'
+})
 
 
 var spanTumb1 = document.getElementById('spanTumb1')

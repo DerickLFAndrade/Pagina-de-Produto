@@ -14,9 +14,10 @@
    .navText{
       
       display: flex;
+     
       margin-top: -70px;
       width: 205px;
-      margin-left: 00px;
+      margin-left: 50px;
   
       
      
@@ -167,9 +168,9 @@
     margin-top: 30px;
 }
 #titulo1 {
-   
-    margin-top:30px;
- 
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top:35px;
+    
     width: 50px;
 }
 #titulo {
@@ -441,16 +442,16 @@
     
       
   }
-  
+  header {
+      margin-left: 10%;
+     
+  }
    .navText{
-      
+      margin-left: 20px;
       display: flex;
+      justify-content: space-between;
       margin-top: -70px;
-      width: 5px;
-      margin-left: 00px;
-      
-  
-      
+      width: 50%;   
      
   }
   #itensNav {
@@ -527,9 +528,9 @@
       
 }
 #tenis1c {
-    width: 90vw;
-    height: 45vh;
-   margin-left: 0px;
+    width: 95vw;
+    height: 45vw;
+   margin-left: 2vw;
     transform: rotate(-5%, 10%);
 }
 
@@ -585,9 +586,9 @@
     margin-top: 30px;
 }
 #titulo1 {
-   
-    margin-top:30px;
- 
+   font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top:35px;
+    margin-left: 50%;
     width: 50px;
 }
 #titulo {
@@ -817,6 +818,7 @@
     background: rgba(0, 0, 0, 0.5);
    display: none;
 }
+
 .modalCont.mostrar {
     display: flex;
 }
@@ -854,22 +856,33 @@
     }
     
   #container1 {
-   left: 0;
-   top: 0;
- width: 100vw;
- height: 150vh;
- 
+      
+   justify-content: center;
+   margin-top: 50px;
+ width: 900px;
+ height: 800px;
+ background: rgb(223, 221, 217);
     
       
   }
-
-  .navText {
+header {
+    display: flex;
     
+  height: 120px;
+  
+  border-bottom: solid 1px gray;
+  
+}
+.navText {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    
+}
+  #navbarCont {
       display: flex;
-      
-      margin-left: 50px; 
-      width: 100vw;
-      
+      justify-content: center;
+    
   }
   .navInps {
 
@@ -882,7 +895,11 @@
 
  
   #titulo1 {
-      margin-top: 20px;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 40pt;
+      
+      
+      margin-top: 15px;
       
     
       
@@ -932,7 +949,7 @@
     background: hsl(26, 100%, 55%); ;
     border-radius: 50px;
     margin-top: 20px;
-    margin-left: 300px;
+    margin-left: 200px;
     color: white;
     
     
@@ -995,7 +1012,7 @@
 }
 #containerTextos {
     display: flex;
-    
+    justify-content: center;
 }
 #textos {
     margin-left: -90px;
@@ -1147,7 +1164,7 @@
     position: absolute;
     text-align: center;
     margin-top: 10px;
-    margin-left: 700px;
+    margin-left: 600px;
     height: 240px;
     width: 350px;
    background-color: hsl(223, 64%, 98%);
@@ -1298,6 +1315,7 @@
     border: none;
     font-size: 25px;
     margin-left: 400px;
+    margin-top: 10vw;
     
 }
 #carouselExampleIndicators {
@@ -1310,7 +1328,7 @@
     justify-content: center;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 110vw;
    height: 150vh;
    background-color:  rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -1329,7 +1347,7 @@
 #icoPrevm {
     animation:  inicioA 0.5s;
     margin-left: -40px;
-    margin-top: -100px;
+    margin-top: 10vw;
     background: white;
     width: 40px;
     height: 40px;
@@ -1339,7 +1357,7 @@
 #icoNextm {
     animation:  inicioA 0.5s;
    margin-left: -160px;
-   margin-top: -100px;
+   margin-top: 10vw;
     background: white;
     width: 40px;
     height: 40px;
@@ -1372,7 +1390,7 @@
 }
 #tenis1c {
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10vw;
   margin-left: -500px;
    width: 500px; 
    height: 400px;
@@ -1380,19 +1398,7 @@
     
     
 }
-.tumbsMod {
-   margin-left: -500px; 
-   margin-top: 470px;
-    display: flex;
-    animation:  inicioA 0.5s;
-    
-}
-.itemIM {
-    
-    margin-left: 40px;
-    width: 80px;
-    border-radius: 10px;
-}
+
  @keyframes inicioA {
        from {
            opacity: 0.5;
