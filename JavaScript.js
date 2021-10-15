@@ -36,9 +36,9 @@ function remove() {
 
 quantidadeCar.value = 0
 carrinhoNav.addEventListener('click', function () {
-
+ 
     console.log(quantidadeCar.value)
-
+    
     if (quantidadeCar.value == 0) {
         console.log(quantidadeCar.value)
         console.log('0')
@@ -214,7 +214,8 @@ spanTumb4.addEventListener('click', function () {
     spanTumb3.style.background = 'none'
    
 })
-
+var tenis1 = document.getElementById('tenis1')
+tenis1.addEventListener('click',abrirFecharMod)
 spanTumb1.addEventListener('click', abrirFecharMod)
 spanTumb2.addEventListener('click', abrirFecharMod)
 spanTumb3.addEventListener('click', abrirFecharMod)
@@ -230,5 +231,7 @@ function abrirFecharMod () {
     let botFechaModCar = document.getElementById('botFechaModCar')
     botFechaModCar.addEventListener('click', function () {
         carouselMod.classList.remove('carouselAbrir')
+        
     })
 }
+
