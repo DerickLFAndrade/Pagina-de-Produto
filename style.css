@@ -104,45 +104,56 @@
 }
 
 
-.icoNext {
-  position: absolute;
-    border: none;
+#icoPrev {
+  
     background: white;
-    border-radius: 50px;
     width: 40px;
     height: 40px;
-    margin-top: 110px;
-    margin-left: 295px;
+    border-radius: 50px;
 }
-.icoNext1 {
-    width: 10px;
-    margin-left: 50%;
-    margin-top: 50%;
-    transform: translate(-50%, -50%);
+#icoNext {
+   
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: -10px;
 }
 .icoPrev {
-    position: absolute;
-    border: none;
-    background: white;
+   
+    margin-top: 12px;
+    margin-left: -4px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    margin-top: 110px;
-    margin-left: 20px;
+}
+.icoNext {
     
+     margin-top: 12px;
+     margin-left: 6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
 }
-.icoPrev1 {
-    width: 10px;
-    margin-left: 20%;
-    margin-top: 50%;
-    transform: translate(-50%, -50%);
-}
+
 #textos {
     width: 345px;
     margin-left: 0px;
 }
+.carousel {
+    width: 355px;
+}
+#tenis1c {
+    width: 345px;
+    height: 260px;
+   margin-left: 0px;
+    transform: rotate(-5%, 10%);
+}
+
+
 #tenis1 {
-    width: 335px;
+    display: none;
+    width: 350px;
     height: 260px;
    margin-left: 0px;
     transform: rotate(-5%, 10%);
@@ -422,23 +433,24 @@
     padding: 0%;
     height: 1px;
     margin-left: 5%;
+    
       
   }
-  header {
-      width: 265px;
-   }
+  
    .navText{
       
       display: flex;
       margin-top: -70px;
       width: 5px;
       margin-left: 00px;
+      
   
       
      
   }
   #itensNav {
       display: flex; 
+      
     }
  
   #carrinhoNav {
@@ -480,16 +492,7 @@
 }
 
 
- #itensNav {
-      display: flex; 
-  }
-  #avatar {
-      visibility: visible;
-      width: 30px;
-  }
-  #carrinhoNav {
-      visibility: visible;
-  }
+
 #quantidadeCarNav {
    visibility: hidden;
  background: none;
@@ -518,53 +521,58 @@
     margin-top: -3px; 
       
 }
+#tenis1c {
+    width: 90vw;
+    height: 45vh;
+   margin-left: 0px;
+    transform: rotate(-5%, 10%);
+}
 
-
-.icoNext {
-  position: absolute;
-    border: none;
+#icoPrev {
+  
     background: white;
-    border-radius: 50px;
     width: 40px;
     height: 40px;
-    margin-top: 110px;
-    margin-left: 295px;
+    border-radius: 50px;
 }
-.icoNext1 {
-    width: 10px;
-    margin-left: 50%;
-    margin-top: 50%;
-    transform: translate(-50%, -50%);
+#icoNext {
+   
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: -40px;
 }
 .icoPrev {
-    position: absolute;
-    border: none;
-    background: white;
+   
+    margin-top: 12px;
+    margin-left: -4px;
+    width: 15px;
+    height: 15px;
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    margin-top: 110px;
-    margin-left: 20px;
+}
+.icoNext {
     
+     margin-top: 12px;
+     margin-left: 6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
 }
-.icoPrev1 {
-    width: 10px;
-    margin-left: 20%;
-    margin-top: 50%;
-    transform: translate(-50%, -50%);
-}
+
 #textos {
     width: 345px;
-    margin-left: 0px;
+    
 }
 #tenis1 {
+    display: none;
     width: 335px;
     height: 260px;
    margin-left: 0px;
     transform: rotate(-5%, 10%);
 }
 #navbarCont {
-    
+    width: 90vw;
   margin-top: -20px;
 }
 #navBot {
@@ -901,7 +909,7 @@ header {
    visibility: hidden;
  background: none;
     border: none;
-    width: 22px;
+    width: 25px;
     height: 15px;
     text-indent:5px;
     background: hsl(26, 100%, 55%); ;
@@ -919,10 +927,11 @@ header {
     color: white;
     background: none;
     border: none;
-    width: 35px;
+    width: 55px;
     font-size: 9pt;
     font-weight: bold;
     margin-top: -3px; 
+    text-align: justify;
       
 }
 
@@ -975,10 +984,13 @@ header {
     margin-left: -90px;
     margin-top:100px; 
 }
+#carousel375p {
+    display: none ;
+}
 #tenis1 {
     width: 345px;
     height: 360px;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 100px;
   border-radius: 10px;
     
@@ -1084,7 +1096,7 @@ header {
     
      background: none;
     border: none;
-    width: 30px;
+    width: 50px;
     position: absolute;
     margin-left: 10px;
     font-weight: bold;
@@ -1175,7 +1187,7 @@ header {
 
 #resultado {
     color: black;
-    margin-left: 10px;
+    margin-left: -5px;
     font-weight: bold;
 }
 #icoRemove {
@@ -1200,7 +1212,7 @@ header {
     
      background: none;
     border: none;
-    width: 30px;
+    width: 40px;
     font-size: 12pt;
     color: rgb(110, 110, 110);
     margin-top: -1px;
@@ -1218,6 +1230,10 @@ header {
 /* CARRINHO */
 .modalCont {
     visibility: hidden;
+}
+
+#carouselExampleControls {
+    display: none;
 }
 }
 

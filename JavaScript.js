@@ -75,8 +75,11 @@ carrinhoNav.addEventListener('click', function () {
 
 
 botAdd.addEventListener('click', function () {
-    produtoCarrinho.style.visibility = 'hidden'
-    itensCarrinho.style.visibility = 'hidden'
+    if (produtoCarrinho.style.visibility == 'visible') {
+
+    
+    //produtoCarrinho.style.visibility = 'hidden'
+    //itensCarrinho.style.visibility = 'hidden'
     let preçoCar = document.getElementById('preçoCar')
     empty.style.visibility = 'hidden'
 
@@ -91,6 +94,36 @@ botAdd.addEventListener('click', function () {
     } else {
         quantidadeCarNav1.style.visibility = 'hidden'
     }
+} else if (empty.style.visibility == 'visible') {
+        produtoCarrinho.style.visibility = 'visible'
+        empty.style.visibility = 'hidden'
+
+        quantidadeCar.value = quantidade.value
+        qtdCarNavValor.value = quantidade.value
+
+        if (qtdCarNavValor.value > 0) {
+            quantidadeCarNav1.style.visibility = 'visible'
+        } else {
+            quantidadeCarNav1.style.visibility = 'hidden'
+        }
+} else {
+        produtoCarrinho.style.visibility = 'hidden'
+        itensCarrinho.style.visibility = 'hidden'
+        let preçoCar = document.getElementById('preçoCar')
+        empty.style.visibility = 'hidden'
+
+        let resultado = document.getElementById('resultado')
+        let soma = 125 * quantidade.value
+
+        resultado.innerHTML = `$${soma.toFixed(2)}`
+        quantidadeCar.value = quantidade.value
+        qtdCarNavValor.value = quantidade.value
+        if (qtdCarNavValor.value > 0) {
+            quantidadeCarNav1.style.visibility = 'visible'
+        } else {
+            quantidadeCarNav1.style.visibility = 'hidden'
+        }
+}
 })
 
 deleteCar.addEventListener('click', remover)
