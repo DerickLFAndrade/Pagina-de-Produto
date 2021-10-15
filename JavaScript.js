@@ -153,3 +153,82 @@ navBot.addEventListener('click', function () {
         divFiltro.classList.remove('mostrar')
     })
 })
+
+
+
+
+var spanTumb1 = document.getElementById('spanTumb1')
+spanTumb1.addEventListener('click', function () {
+    
+    spanTumb1.style.border = '3px solid orange'
+    spanTumb1.style.background = 'rgba(255,255,255,0.5)'
+   
+    spanTumb2.style.border = 'none'
+    spanTumb2.style.background = 'none'
+    spanTumb3.style.border = 'none'
+    spanTumb3.style.background = 'none'
+    spanTumb4.style.border = 'none'
+    spanTumb4.style.background = 'none'
+    
+  })
+var spanTumb2 = document.getElementById('spanTumb2')
+spanTumb2.addEventListener('click', function () {
+   
+    spanTumb2.style.border = '3px solid orange'
+    spanTumb2.style.background = 'rgba(255,255,255,0.5)'
+
+    spanTumb1.style.border = 'none'
+    spanTumb1.style.background = 'none'
+    spanTumb3.style.border = 'none'
+    spanTumb3.style.background = 'none'
+    spanTumb4.style.border = 'none'
+    spanTumb4.style.background = 'none'
+    
+  
+})
+var spanTumb3 = document.getElementById('spanTumb3')
+spanTumb3.addEventListener('click', function () {
+    
+    spanTumb3.style.border = '3px solid orange'
+    spanTumb3.style.background = 'rgba(255,255,255,0.5)'
+    
+    spanTumb1.style.border = 'none'
+    spanTumb1.style.background = 'none'
+    spanTumb2.style.border = 'none'
+    spanTumb2.style.background = 'none'
+    spanTumb4.style.border = 'none'
+    spanTumb4.style.background = 'none'
+   
+})
+var spanTumb4 = document.getElementById('spanTumb4')
+spanTumb4.addEventListener('click', function () {
+    
+    spanTumb4.style.border = '3px solid orange'
+    spanTumb4.style.background = 'rgba(255,255,255,0.5)'
+
+    spanTumb1.style.border = 'none'
+    spanTumb1.style.background = 'none'
+    spanTumb2.style.border = 'none'
+    spanTumb2.style.background = 'none'
+    spanTumb3.style.border = 'none'
+    spanTumb3.style.background = 'none'
+   
+})
+
+spanTumb1.addEventListener('click', abrirFecharMod)
+spanTumb2.addEventListener('click', abrirFecharMod)
+spanTumb3.addEventListener('click', abrirFecharMod)
+spanTumb4.addEventListener('click', abrirFecharMod)
+function abrirFecharMod() {
+    let carouselMod = document.getElementById("carouselMod")
+    carouselMod.classList.add('carouselAbrir')
+}
+
+function abrirFecharMod () {
+    var carouselMod = document.getElementById('carouselMod')
+    carouselMod.classList.add('carouselAbrir')
+    let botFechaModCar = document.getElementById('botFechaModCar')
+    botFechaModCar.addEventListener('click', function () {
+        carouselMod.classList.remove('carouselAbrir')
+    })
+}

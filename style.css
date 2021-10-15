@@ -418,6 +418,9 @@
     border: none;
     background: none;
 }
+.carouselMod {
+    display: none;
+}
 /* CONTEÚDO DENTRO DO CARRINHO */
 /* CARRINHO */
 
@@ -426,7 +429,9 @@
 }
 }
 @media screen and (min-width: 376px) and (max-width: 576px) {
-    
+    .carouselMod {
+    display: none;
+}
   #container1 {
    
     margin: 0%;
@@ -849,44 +854,49 @@
     }
     
   #container1 {
-   
-    margin: 0%;
-    padding: 0%;
-    height: 1px;
+   left: 0;
+   top: 0;
+ width: 100vw;
+ height: 150vh;
+ 
     
       
   }
-header {
-    margin-top: 20px;
-}
+
   .navText {
       position: absolute;
       display: flex;
       margin-left: -50px; 
-      width: 150vw;
+      width: 90vw;
+      
   }
   .navInps {
       font-weight: bold;
       color: rgb(151, 151, 151);
       margin-left: 10px;
+      
   }
 
  
   #titulo1 {
       margin-top: 20px;
+      
   }
  
  #divFiltro {
 
    font-weight: bold;
+   
     
 }
 #fecharFiltro {
-    visibility: hidden;
+    display: none;
+    
 }
 #ft {
     background: none;
     border: none;
+    
 }
 .item {
     margin: 10px;
@@ -1232,9 +1242,145 @@ header {
     visibility: hidden;
 }
 
-#carouselExampleControls {
+#carouselNormal {
     display: none;
 }
+#spanTumb1 {
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 5px;
+    width: 74.5px;
+   height: 74px;
+   border-radius: 20px;
+    
+}
+#spanTumb2 {
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 5px;
+    width: 74.5px;
+   height: 74px;
+   border-radius: 20px;
+    
+}
+#spanTumb3 {
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 5px;
+    width: 74.5px;
+   height: 74px;
+   border-radius: 20px;
+    
+}
+#spanTumb4 {
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 5px;
+    width: 74.5px;
+   height: 74px;
+   border-radius: 20px;
+    
+}
+.botFechaModCar {
+    position: absolute;
+    z-index: 6000;
+    background: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 25px;
+    margin-left: 400px;
+    
+}
+#carouselExampleIndicators {
+    justify-content: center;
+    width: 600px;
+    margin-top: 40px;
+}
+.carouselMod {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+   height: 150vh;
+   background-color:  rgba(0, 0, 0, 0.5);
+    position: fixed;
+    
+ display: none;
+    
+}
+
+.carouselMod.carouselAbrir {
+     display: flex;
+     
+    
+}
+
+
+#icoPrevm {
+    margin-left: -40px;
+    margin-top: -100px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+#icoNextm {
+   margin-left: -160px;
+   margin-top: -100px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.icoPrevm {
+   
+    margin-top: 12px;
+    margin-left: -4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+}
+.icoNextm {
+    
+     margin-top: 12px;
+     margin-left: 6px;
+    width: 10px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+#contcar {
+    display: flex;
+    margin-left: 500px;
+   width: 1000px;
+    
+
+}
+#tenis1c {
+    border-radius: 5px;
+    margin-top: 20px;
+  margin-left: -500px;
+   width: 500px; 
+   height: 400px;
+
+    
+    
+}
+.tumbsMod {
+   margin-left: -500px; 
+   margin-top: 470px;
+    display: flex;
+}
+.itemIM {
+    margin-left: 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+
 }
 
 
