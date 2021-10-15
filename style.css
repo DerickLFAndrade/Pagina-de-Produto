@@ -211,7 +211,7 @@
 #adicionarContainer {
     display: flex;
     flex-direction: column;
-    margin-left: -10px;
+    
 }
 #adicionar {
    text-align: center;
